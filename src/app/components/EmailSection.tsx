@@ -8,27 +8,24 @@ import GradientButton from './GradientButton';
 const EmailSection: React.FC = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const handleSubmit = async (e: any) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const dataJSON = JSON.stringify(data);
-    const endPoint = '/api/send';
-
-    const options = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: dataJSON,
-    };
-
-    const response = await fetch(endPoint, options);
-
-    if (response.status === 200) {
-      console.log('message sent');
-      setEmailSubmitted(true);
-    }
+    // e.preventDefault();
+    // const data = {
+    //   email: e.target.email.value,
+    //   subject: e.target.subject.value,
+    //   message: e.target.message.value,
+    // };
+    // const dataJSON = JSON.stringify(data);
+    // const endPoint = '/api/send';
+    // const options = {
+    //   method: 'POST',
+    //   headers: { 'Content-Type': 'application/json' },
+    //   body: dataJSON,
+    // };
+    // const response = await fetch(endPoint, options);
+    // if (response.status === 200) {
+    //   console.log('message sent');
+    //   setEmailSubmitted(true);
+    // }
   };
 
   const renderEmailSubmitted = () => {
