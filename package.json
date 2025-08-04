@@ -1,5 +1,5 @@
 {
-  "name": "next-portofolio",
+  "name": "richard95",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,9 +17,10 @@
     "@solana/web3.js": "^1.95.3",
     "framer-motion": "^11.3.24",
     "next": "14.2.5",
-    "react": "^18.3.1",
+    "phaser": "^3.90.0",
+    "react": "^18.2.0",
     "react-animated-numbers": "^0.18.0",
-    "react-dom": "^18.3.1",
+    "react-dom": "^18.2.0",
     "react-scroll": "^1.9.0",
     "react-type-animation": "^3.2.0",
     "resend": "^3.5.0"
