@@ -6,14 +6,6 @@ import { motion } from 'framer-motion';
 
 import { Link as ScrollLink } from 'react-scroll';
 
-// Function for download CV
-const handleDownload = () => {
-  const link = document.createElement('a');
-  link.href = '/CV-MARTIN.pdf'; // Path to your CV file in the public directory
-  link.download = 'Martin_Wijaya_CV.pdf'; // The name the file will have when downloaded
-  link.click();
-};
-
 // Fungsi untuk merender title
 const renderTitle = () => (
   <h1 className='text-white mb-4 text-4xl lg:text-8xl lg:leading-normal font-extrabold'>
@@ -38,7 +30,8 @@ const renderTitle = () => (
 const renderDescription = () => (
   <div className='mb-8'>
     <p className='text-white mb-4 text-lg lg:text-xl'>
-      We&apos;re here to brighten up office workers downtime with fun mini games and even make you rich if you hold our token!
+      We&apos;re here to brighten up office workers downtime with fun mini games
+      and even make you rich if you hold our token!
     </p>
 
     <ul className='list-disc pl-6 text-white text-lg lg:text-xl'>
@@ -51,28 +44,13 @@ const renderDescription = () => (
 
 // Fungsi untuk merender tombol 'Hire Me'
 const renderButtonBuyToken = () => (
-  // <ScrollLink to='#dex' smooth={true} duration={500}>
-  //   <button className='px-6 py-3 bg-white w-full sm:w-fit rounded-full hover:cursor-pointer hover:bg-slate-200 mr-4 text-white bg-gradient-primary'>
-  //     Buy Token
-  //   </button>
-  // </ScrollLink>
-  
-    <button className='px-6 py-3 bg-white w-full sm:w-fit rounded-full hover:cursor-pointer hover:bg-slate-200 mr-4 text-white bg-gradient-primary'>
-      <a href="https://dexscreener.com/abstract/0xf374ed71e8922077cf8300d4a1fedadaace11093:moon" target="_blank">
-        Buy Token
-      </a>
-    </button>
-);
-
-// Fungsi untuk merender tombol 'Download CV'
-const renderButtonDownload = () => (
-  <button
-    onClick={handleDownload}
-    className='px-1 py-1 bg-transparent w-full sm:w-fit rounded-full text-white mt-4 lg:mt-0 bg-gradient-primary'
-  >
-    <span className='px-5 py-2 block bg-black rounded-full hover:bg-slate-800'>
-      Download CV
-    </span>
+  <button className='px-6 py-3 bg-white w-full sm:w-fit rounded-full hover:cursor-pointer hover:bg-slate-200 mr-4 text-white bg-gradient-primary'>
+    <a
+      href='https://dexscreener.com/abstract/0xf374ed71e8922077cf8300d4a1fedadaace11093:moon'
+      target='_blank'
+    >
+      Buy Token
+    </a>
   </button>
 );
 
@@ -90,11 +68,7 @@ const renderImage = () => (
 );
 
 // Fungsi untuk merender tombol-tombol
-const renderButtons = () => (
-  <div>
-    {renderButtonBuyToken()}
-  </div>
-);
+const renderButtons = () => <div>{renderButtonBuyToken()}</div>;
 
 // Fungsi utama komponen HeroSection
 const HeroSection: React.FC = () => {
@@ -119,7 +93,7 @@ const HeroSection: React.FC = () => {
         >
           {renderImage()}
         </motion.div>
-        <div className='absolute left-0 bottom-0 bg-gradient-to-t from-black via-[rgba(0, 143, 129, 0.0061)] to-[rgba(0, 0, 0, 1)] w-[100%] h-[150px]  z-[3]' />
+        {/* <div className='absolute left-0 bottom-0 bg-gradient-to-t from-black via-[rgba(0, 143, 129, 0.0061)] to-[rgba(0, 0, 0, 1)] w-[100%] h-[150px]  z-[3]' /> */}
       </div>
       <video
         id='background-video'

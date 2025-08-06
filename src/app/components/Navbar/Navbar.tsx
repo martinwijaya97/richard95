@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
       <div className='flex flex-wrap container items-center justify-between mx-auto p-8'>
         <Link href={'/'} className='flex flex-row space-x-0'>
           <Image
-            src='/images/icons-m.png'
+            src='/images/m.jpeg'
             alt='Martin'
             width={50}
             height={50}
@@ -56,17 +56,17 @@ const Navbar: React.FC = () => {
         <div className='menu hidden md:block' id='navbar'>
           <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8'>
             {navLinks.map((link, index) => (
-              
               <li key={index}>
-                {
-                link.path==='/games'
-                ?
-                <Link   className='block py-2 px-4 text-white hover:cursor-pointer' href={link.path} >{link.title}</Link>
-                :
-                <NavLink href={link.path} title={link.title} />
-                }
-
-                
+                {link.path === '/games' ? (
+                  <Link
+                    className='block py-2 px-4 text-white hover:cursor-pointer'
+                    href={link.path}
+                  >
+                    {link.title}
+                  </Link>
+                ) : (
+                  <NavLink href={link.path} title={link.title} />
+                )}
               </li>
             ))}
           </ul>

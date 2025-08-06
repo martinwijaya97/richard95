@@ -9,7 +9,7 @@ import DexScreenerSection from '@/app/components/DexScreenerSection';
 
 const Home = () => {
   return (
-    <main className='flex min-h-screen flex-col bg-black'>
+    <main className='flex min-h-screen flex-col bg-purple-900'>
       <Navbar />
       <div>
         <HeroSection />

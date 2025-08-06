@@ -93,7 +93,7 @@ const Wallet: FC = () => {
 
   return (
     <div>
-      <button
+      {/* <button
         disabled={wallet.connected}
         onClick={connectWallet}
         style={{
@@ -106,7 +106,7 @@ const Wallet: FC = () => {
         {wallet.connected
           ? `Wallet Address ${wallet.publicKey.toBase58()}`
           : ' Connect to Solflare'}
-      </button>
+      </button> */}
       {/* <WalletMultiButton /> */}
       {/* <WalletDisconnectButton /> */}
       <WalletAddressDisplay />
