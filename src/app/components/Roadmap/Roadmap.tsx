@@ -4,18 +4,22 @@ import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { Link as ScrollLink } from 'react-scroll';
+import ScrollReveal from '../ScrollReveal';
+import ScrollRevealContainer from '../ScrollRevealContainer';
 
 const Roadmap: React.FC = () => {
   const renderHeader = () => {
     return (
-      <div className='max-w-[45rem] flex flex-col items-center text-center  gap-3 mb-12 '>
-        <h2 className='  font-bold text-5xl'>Roadmap 2025-2026</h2>
-        <p className='text-base tracking-wide text-gray-400 font-semibold leading-tight '>
-          Step by step, our roadmap guides you through discovery, planning,
-          design, development, deployment, and ongoing maintenance, ensuring
-          transparency and progress every step of the way.
-        </p>
-      </div>
+      <ScrollReveal preset='slideDown' delay={0.2} duration={2} distance={200}>
+        <div className='max-w-[45rem] flex flex-col items-center text-center  gap-3 mb-12 '>
+          <h2 className='  font-bold text-5xl'>Roadmap 2025-2026</h2>
+          <p className='text-base tracking-wide text-gray-400 font-semibold leading-tight '>
+            Step by step, our roadmap guides you through discovery, planning,
+            design, development, deployment, and ongoing maintenance, ensuring
+            transparency and progress every step of the way.
+          </p>
+        </div>
+      </ScrollReveal>
     );
   };
   const renderBlankLeftItem = () => {
@@ -117,26 +121,41 @@ const Roadmap: React.FC = () => {
       {renderHeader()}
       <div className='flex flex-col grid-cols-9 p-2 mx-auto md:grid'>
         <div className='flex md:contents flex-row-reverse'>
-          {renderLeftItem('01', {
-            title: 'Project Inception and Token Creation',
-            text: [
-              'Finalize project vision and branding: “By office workers, for office workers.”',
-              'Launch of $RICHARD token on the Abstract blockchain.',
-            ],
-          })}
+          <ScrollReveal
+            direction='left'
+            duration={3}
+            distance={200}
+            delay={0.1}
+          >
+            {renderLeftItem('01', {
+              title: 'Project Inception and Token Creation',
+              text: [
+                'Finalize project vision and branding: “By office workers, for office workers.”',
+                'Launch of $RICHARD token on the Abstract blockchain.',
+              ],
+            })}
+          </ScrollReveal>
+
           {renderMiddleItem()}
           {renderBlankRightItem()}
         </div>
         <div className='flex md:contents '>
           {renderBlankLeftItem()}
           {renderMiddleItemReverse()}
-          {renderRightItem('02', {
-            title: 'Community Growth & Awareness',
-            text: [
-              'Community building on Telegram & X.',
-              'Initial marketing push to attract early supporters.',
-            ],
-          })}
+          <ScrollReveal
+            direction='right'
+            duration={3}
+            distance={200}
+            delay={0.1}
+          >
+            {renderRightItem('02', {
+              title: 'Community Growth & Awareness',
+              text: [
+                'Community building on Telegram & X.',
+                'Initial marketing push to attract early supporters.',
+              ],
+            })}
+          </ScrollReveal>
         </div>
         <div className='flex md:contents flex-row-reverse'>
           {renderLeftItem('03', {
