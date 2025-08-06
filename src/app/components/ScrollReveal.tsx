@@ -154,7 +154,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
       variants={variants}
       initial='hidden'
       animate={isInView ? 'visible' : 'hidden'}
-      //   className={className}
+      className={className}
     >
       {children}
     </motion.div>

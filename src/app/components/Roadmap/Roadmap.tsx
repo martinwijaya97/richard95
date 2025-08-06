@@ -122,6 +122,11 @@ const Roadmap: React.FC = () => {
       <div className='flex flex-col grid-cols-9 p-2 mx-auto md:grid'>
         <div className='flex md:contents flex-row-reverse'>
           <ScrollReveal
+            className="col-start-1 col-end-5
+              justify-self-end
+              flex flex-col md:flex-row
+              max-w-[35rem]
+              my-6 tablet:my-4"
             direction='left'
             duration={3}
             distance={200}
@@ -143,6 +148,12 @@ const Roadmap: React.FC = () => {
           {renderBlankLeftItem()}
           {renderMiddleItemReverse()}
           <ScrollReveal
+            className="
+                col-start-6 col-end-10
+                justify-self-start
+                flex flex-col-reverse md:flex-row
+                max-w-[35rem]
+                my-6 tablet:my-4"
             direction='right'
             duration={3}
             distance={200}
@@ -158,27 +169,53 @@ const Roadmap: React.FC = () => {
           </ScrollReveal>
         </div>
         <div className='flex md:contents flex-row-reverse'>
-          {renderLeftItem('03', {
-            title: 'Mini Game Development',
-            text: [
-              'Design mini game concepts.',
-              'Prototype release for community feedback.',
-              'Game testing by early $RICHARD holders.',
-            ],
-          })}
+          <ScrollReveal
+            className="col-start-1 col-end-5
+              justify-self-end
+              flex flex-col md:flex-row
+              max-w-[35rem]
+              my-6 tablet:my-4"
+            direction='left'
+            duration={3}
+            distance={200}
+            delay={0.1}
+          >
+            {renderLeftItem('03', {
+              title: 'Mini Game Development',
+              text: [
+                'Design mini game concepts.',
+                'Prototype release for community feedback.',
+                'Game testing by early $RICHARD holders.',
+              ],
+            })}
+          </ScrollReveal>
           {renderMiddleItem()}
           {renderBlankRightItem()}
         </div>
         <div className='flex md:contents '>
           {renderBlankLeftItem()}
           {renderMiddleItemReverse()}
-          {renderRightItem('04', {
-            title: 'Launch & Scale',
-            text: [
-              'Launch official Mini Games with Smart Contract',
-              'Expand game collection and user engagement features.',
-            ],
-          })}
+
+          <ScrollReveal
+            className="
+                col-start-6 col-end-10
+                justify-self-start
+                flex flex-col-reverse md:flex-row
+                max-w-[35rem]
+                my-6 tablet:my-4"
+            direction='right'
+            duration={3}
+            distance={200}
+            delay={0.1}
+          >
+            {renderRightItem('04', {
+              title: 'Launch & Scale',
+              text: [
+                'Launch official Mini Games with Smart Contract',
+                'Expand game collection and user engagement features.',
+              ],
+            })}
+          </ScrollReveal>
         </div>
       </div>
     </section>

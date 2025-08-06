@@ -27,10 +27,10 @@ const Navbar: React.FC = () => {
       <div className='flex flex-wrap container items-center justify-between mx-auto p-8'>
         <Link href={'/'} className='flex flex-row space-x-0'>
           <Image
-            src='/images/m.jpeg'
+            src='/images/icons-richard.png'
             alt='Martin'
-            width={50}
-            height={50}
+            width={100}
+            height={100}
             className='p-0 m-0'
           />
         </Link>
