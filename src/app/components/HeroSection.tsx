@@ -37,28 +37,31 @@ const renderTitle = () => (
 // Fungsi untuk merender deskripsi
 const renderDescription = () => (
   <div className='mb-8'>
-    <p className='text-gray-500 mb-4 text-lg lg:text-xl'>
-      We&apos;re on a mission to explore the coolest tech trends while having a
-      ton of fun along the way. Guess what? When our token pumps, we&apos;re not
-      just going to the moon – we&apos;re going straight to the dealership to
-      pick out our Lambos!
+    <p className='text-white mb-4 text-lg lg:text-xl'>
+      We&apos;re here to brighten up office workers downtime with fun mini games and even make you rich if you hold our token!
     </p>
 
-    <ul className='list-disc pl-6 text-gray-500 text-lg lg:text-xl'>
-      <li>Start with memes</li>
+    <ul className='list-disc pl-6 text-white text-lg lg:text-xl'>
+      <li>Buy $RICHARD95</li>
       <li>HODL</li>
-      <li>Go to dealer!</li>
+      <li>To the Moon !!!</li>
     </ul>
   </div>
 );
 
 // Fungsi untuk merender tombol 'Hire Me'
-const renderButtonHire = () => (
-  <ScrollLink to='#contact' smooth={true} duration={500}>
+const renderButtonBuyToken = () => (
+  // <ScrollLink to='#dex' smooth={true} duration={500}>
+  //   <button className='px-6 py-3 bg-white w-full sm:w-fit rounded-full hover:cursor-pointer hover:bg-slate-200 mr-4 text-white bg-gradient-primary'>
+  //     Buy Token
+  //   </button>
+  // </ScrollLink>
+  
     <button className='px-6 py-3 bg-white w-full sm:w-fit rounded-full hover:cursor-pointer hover:bg-slate-200 mr-4 text-white bg-gradient-primary'>
-      Hire Me
+      <a href="https://dexscreener.com/abstract/0xf374ed71e8922077cf8300d4a1fedadaace11093:moon" target="_blank">
+        Buy Token
+      </a>
     </button>
-  </ScrollLink>
 );
 
 // Fungsi untuk merender tombol 'Download CV'
@@ -77,7 +80,7 @@ const renderButtonDownload = () => (
 const renderImage = () => (
   <div className='rounded-full w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative mt-4 lg:mt-0 p-0'>
     <Image
-      src='/images/token.jpeg'
+      src='/images/token.png'
       alt='portfolio-avatar'
       layout='fill'
       objectFit=''
@@ -89,8 +92,7 @@ const renderImage = () => (
 // Fungsi untuk merender tombol-tombol
 const renderButtons = () => (
   <div>
-    {renderButtonHire()}
-    {renderButtonDownload()}
+    {renderButtonBuyToken()}
   </div>
 );
 

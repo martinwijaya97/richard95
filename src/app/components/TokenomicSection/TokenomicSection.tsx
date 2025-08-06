@@ -26,7 +26,7 @@ const TokenomicItem: React.FC<TokenomicItemProps> = ({
 
   return (
     <div
-      className='flex flex-col justify-center items-center mx-4 cursor-pointer'
+      className='flex flex-col justify-center items-center cursor-pointer text-center px-4'
       onClick={() => {
         setKey(key + 1);
       }}
@@ -70,19 +70,21 @@ const TokenomicSection: React.FC = () => {
   return (
     <section>
       <div className='pt-8 px-4 sm:pt-16 xl:px-16 flex flex-col items-center '>
-        <h1 className='text-4xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-primary'>
+        <h1 className='text-4xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-primary pb-12'>
           Tokenomics
         </h1>
-        <div className='border border-[#33353F] w-full rounded-md py-8 px-17  lg:flex flex-row items-center justify-between'>
-          {achievementList.map((achievement, index) => (
-            <TokenomicItem
-              key={index}
-              prefix={achievement.prefix}
-              value={achievement.value}
-              postfix={achievement.postfix}
-              text={achievement.text}
-            />
-          ))}
+        <div className="w-full flex justify-center my-8">
+          <div className="grid grid-cols-3 border border-gray-700 rounded-md bg-black text-white overflow-hidden shadow-md px-12 py-8 divide-x divide-gray-700 w-full max-w-10xl">
+            {achievementList.map((achievement, index) => (
+              <TokenomicItem
+                key={index}
+                prefix={achievement.prefix}
+                value={achievement.value}
+                postfix={achievement.postfix}
+                text={achievement.text}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

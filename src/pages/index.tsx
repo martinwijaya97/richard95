@@ -17,8 +17,8 @@ const Home = () => {
         <AboutSection />
         <Roadmap />
         <DexScreenerSection
-          contractAddress='71rJzUKB6bztgDwC9gcXuzYprbWfxiLaHyHE8AmVpump'
-          blockchain='solana'
+          contractAddress='0xf374ed71e8922077cf8300d4a1fedadaace11093'
+          blockchain='abstract'
           title='Token Analytics'
           description='Real-time token analytics and trading data from DEX Screener'
         />

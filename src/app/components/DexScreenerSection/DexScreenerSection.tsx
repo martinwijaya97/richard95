@@ -8,8 +8,8 @@ interface DexScreenerSectionProps {
 }
 
 const DexScreenerSection: React.FC<DexScreenerSectionProps> = ({
-  contractAddress = 'YOUR_CONTRACT_ADDRESS_HERE',
-  blockchain = 'solana',
+  contractAddress = '0xf374ed71e8922077cf8300d4a1fedadaace11093',
+  blockchain = 'abstract',
   title = 'Token Analytics',
   description = 'Real-time token analytics and trading data',
 }) => {

@@ -1,25 +1,25 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import GithubIcon from '../../../public/icons-github.svg';
-import LinkedInIcon from '../../../public/icons-linkedin.svg';
+import TwitterIcon from '../../../public/icons-twitter.png';
+import TelegramIcon from '../../../public/icons-telegram.png';
 
 const SocialLinks: React.FC = () => {
   return (
     <div className='socials flex flex-row gap-2'>
       <Link
-        href='https://github.com/martinwijaya97'
+        href='https://x.com/Richard9to5'
         target='_blank'
         rel='noopener noreferrer'
       >
-        <Image src={GithubIcon} alt='Github Icon' width={50} height={50} />
+        <Image src={TwitterIcon} alt='Github Icon' width={60} height={60} />
       </Link>
       <Link
-        href='https://www.linkedin.com/in/martin-wijaya-4316241b9/'
+        href='https://t.me/+oxc4mKqEGA8xNTk9'
         target='_blank'
         rel='noopener noreferrer'
       >
-        <Image src={LinkedInIcon} alt='LinkedIn Icon' width={50} height={50} />
+        <Image src={TelegramIcon} alt='LinkedIn Icon' width={60} height={60} />
       </Link>
     </div>
   );

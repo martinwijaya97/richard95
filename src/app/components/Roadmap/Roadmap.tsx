@@ -9,7 +9,7 @@ const Roadmap: React.FC = () => {
   const renderHeader = () => {
     return (
       <div className='max-w-[45rem] flex flex-col items-center text-center  gap-3 mb-12 '>
-        <h2 className='  font-bold text-5xl'>Roadmap 2026</h2>
+        <h2 className='  font-bold text-5xl'>Roadmap 2025-2026</h2>
         <p className='text-base tracking-wide text-gray-400 font-semibold leading-tight '>
           Step by step, our roadmap guides you through discovery, planning,
           design, development, deployment, and ongoing maintenance, ensuring
@@ -54,13 +54,80 @@ const Roadmap: React.FC = () => {
         </p>
         <div className='flex gap-2'>
           <p className='font-bold'>✧</p>
-          <p>Establish the core team and finalize the project vision.</p>
+          <p>Finalize project vision and branding: “By office workers, for office workers.”</p>
         </div>
         <div className='flex gap-2'>
           <p className='font-bold'>✧</p>
           <p>
-            Develop and deploy Bitbullx Token on the Bep 20 network with 18
-            decimal precision.
+            Launch of $RICHARD token on the Abstract blockchain.
+          </p>
+        </div>
+      </div>
+    );
+  };
+
+  
+  const renderText2 = () => {
+    return (
+      <div className='h-fit flex flex-col gap-5 rounded-xl roadmap-shadow tracking-wider p-6 border'>
+        <p className='leading-6 font-bold text-xl'>
+          Community Growth & Awareness
+        </p>
+        <div className='flex gap-2'>
+          <p className='font-bold'>✧</p>
+          <p>Community building on Telegram & X.</p>
+        </div>
+        <div className='flex gap-2'>
+          <p className='font-bold'>✧</p>
+          <p>
+             Initial marketing push to attract early supporters.
+          </p>
+        </div>
+      </div>
+    );
+  };
+
+  
+  const renderText3 = () => {
+    return (
+      <div className='h-fit flex flex-col gap-5 rounded-xl roadmap-shadow tracking-wider p-6 border'>
+        <p className='leading-6 font-bold text-xl'>
+          Mini Game Development
+        </p>
+        <div className='flex gap-2'>
+          <p className='font-bold'>✧</p>
+          <p>Design mini game concepts.</p>
+        </div>
+        <div className='flex gap-2'>
+          <p className='font-bold'>✧</p>
+          <p>
+            Prototype release for community feedback.
+          </p>
+        </div>
+        <div className='flex gap-2'>
+          <p className='font-bold'>✧</p>
+          <p>
+            Game testing by early $RICHARD holders.
+          </p>
+        </div>
+      </div>
+    );
+  };
+  
+  const renderText4 = () => {
+    return (
+      <div className='h-fit flex flex-col gap-5 rounded-xl roadmap-shadow tracking-wider p-6 border'>
+        <p className='leading-6 font-bold text-xl'>
+          Launch & Scale
+        </p>
+        <div className='flex gap-2'>
+          <p className='font-bold'>✧</p>
+          <p>Launch official Mini Games with Smart Contract</p>
+        </div>
+        <div className='flex gap-2'>
+          <p className='font-bold'>✧</p>
+          <p>
+            Expand game collection and user engagement features.
           </p>
         </div>
       </div>
@@ -71,6 +138,15 @@ const Roadmap: React.FC = () => {
       <div className='h-fit relative flex flex-col md:flex-row max-w-[35rem] my-10 tablet:my-5 col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto tracking-normal '>
         {renderNumberLeft(number)}
         {renderText()}
+      </div>
+    );
+  };
+  
+  const renderItemThree = (number: string) => {
+    return (
+      <div className='h-fit relative flex flex-col md:flex-row max-w-[35rem] my-10 tablet:my-5 col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto tracking-normal '>
+        {renderNumberLeft(number)}
+        {renderText3()}
       </div>
     );
   };
@@ -102,7 +178,16 @@ const Roadmap: React.FC = () => {
   const renderRightItem = (number: string) => {
     return (
       <div className='h-fit relative flex flex-col-reverse md:flex-row max-w-[35rem] my-10 tablet:my-5 col-start-6 col-end-10 mr-auto md:mr-0 md:ml-auto tracking-normal '>
-        {renderText()}
+        {renderText2()}
+        {renderNumberRight(number)}
+      </div>
+    );
+  };
+
+  const renderItemFour = (number: string) => {
+    return (
+      <div className='h-fit relative flex flex-col-reverse md:flex-row max-w-[35rem] my-10 tablet:my-5 col-start-6 col-end-10 mr-auto md:mr-0 md:ml-auto tracking-normal '>
+        {renderText4()}
         {renderNumberRight(number)}
       </div>
     );
@@ -126,14 +211,14 @@ const Roadmap: React.FC = () => {
           {renderRightItem('02')}
         </div>
         <div className='flex md:contents flex-row-reverse'>
-          {renderLeftItem('03')}
+          {renderItemThree('03')}
           {renderMiddleItem()}
           {renderBlankRightItem()}
         </div>
         <div className='flex md:contents '>
           {renderBlankLeftItem()}
           {renderMiddleItemReverse()}
-          {renderRightItem('04')}
+          {renderItemFour('04')}
         </div>
       </div>
     </section>
