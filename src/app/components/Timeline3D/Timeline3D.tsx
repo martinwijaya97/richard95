@@ -10,67 +10,64 @@ const Timeline3D: React.FC = () => {
   const timelineData = [
     {
       id: 1,
-      year: '2024',
+      year: '2025',
       title: 'Project Genesis',
       description:
-        'The beginning of our revolutionary journey into 3D web animations.',
+        'The beginning of Token Creation.',
       details: [
         'Initial concept development',
-        'Technology stack selection',
         'Team formation and planning',
+        'Launch of $RICHARD token on the Abstract blockchain',
       ],
       color: 'from-blue-500 to-cyan-500',
       icon: '🚀',
     },
     {
       id: 2,
-      year: '2024 Q2',
-      title: 'Design & Prototyping',
+      year: '2025',
+      title: 'Community Growth & Awareness',
       description:
-        'Creating stunning 3D interfaces and user experience designs.',
+        'Creating community to growth the token.',
       details: [
-        '3D modeling and animations',
-        'User interface prototyping',
-        'Performance optimization',
+        'Community building on Telegram & X',
+        'Initial marketing push to attract early supporters',
+      ],
+      color: 'from-purple-500 to-pink-500',
+      icon: '👥',
+    },
+    {
+      id: 3,
+      year: '2025',
+      title: 'Design & Development Phase',
+      description:
+        'Developing mini games and user experience designs.',
+      details: [
+        'Design mini game concepts',
+        'Prototype release for community feedback',
+        'Game testing by early $RICHARD holders',
       ],
       color: 'from-purple-500 to-pink-500',
       icon: '🎨',
     },
     {
-      id: 3,
-      year: '2024 Q3',
-      title: 'Development Phase',
-      description:
-        'Building the core functionality with cutting-edge technologies.',
-      details: [
-        'React & Next.js implementation',
-        'Framer Motion integration',
-        'CSS 3D transforms mastery',
-      ],
-      color: 'from-green-500 to-emerald-500',
-      icon: '⚡',
-    },
-    {
       id: 4,
-      year: '2024 Q4',
+      year: '2026',
       title: 'Launch & Scale',
       description: 'Deploying to production and scaling for global reach.',
       details: [
-        'Production deployment',
-        'Performance monitoring',
-        'Global CDN integration',
+        'Launch official Mini Games with Smart Contract',
+        'Expand game collection and user engagement features',
       ],
       color: 'from-orange-500 to-red-500',
       icon: '🌍',
     },
     {
       id: 5,
-      year: '2025',
+      year: '2026',
       title: 'Future Innovations',
       description:
-        'Exploring new frontiers in web animation and 3D experiences.',
+        'Exploring new frontiers in web and experiences.',
       details: [
-        'WebGL integration',
         'AR/VR capabilities',
         'AI-powered animations',
       ],
@@ -112,11 +109,10 @@ const Timeline3D: React.FC = () => {
         <ScrollReveal preset='slideDown' delay={0.2} duration={1}>
           <div className='text-center mb-20'>
             <h2 className='text-4xl md:text-6xl font-bold text-white mb-6'>
-              Interactive 3D Timeline
+              Roadmap 2025-2026
             </h2>
             <p className='text-xl text-gray-300 max-w-3xl mx-auto'>
-              Experience our journey through time with immersive 3D animations
-              and smooth scroll effects.
+              Step by step, our roadmap guides you through discovery, planning, design, development, deployment, and ongoing maintenance, ensuring transparency and progress every step of the way.
             </p>
           </div>
         </ScrollReveal>
