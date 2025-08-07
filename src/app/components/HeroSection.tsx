@@ -73,7 +73,10 @@ const renderButtons = () => <div>{renderButtonBuyToken()}</div>;
 // Fungsi utama komponen HeroSection
 const HeroSection: React.FC = () => {
   return (
-    <section id='#home' className='lg:py-6 mt-28 relative mx-auto px-12 h-full'>
+    <section
+      id='#home'
+      className='lg:py-6 mt-28 relative mx-auto px-12 h-full bg-black'
+    >
       <div className='grid grid-cols-1 sm:grid-cols-12 mb-36 '>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}

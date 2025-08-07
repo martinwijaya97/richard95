@@ -20,6 +20,7 @@ const Navbar: React.FC = () => {
     { title: 'Roadmap', path: '#roadmap' },
     { title: 'DEX', path: '#dex' },
     { title: 'Games', path: '/games' },
+    { title: 'Animations', path: '/animations' },
   ];
 
   return (
@@ -57,7 +58,7 @@ const Navbar: React.FC = () => {
           <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8'>
             {navLinks.map((link, index) => (
               <li key={index}>
-                {link.path === '/games' ? (
+                {link.path === '/games' || link.path === '/animations' ? (
                   <Link
                     className='block py-2 px-4 text-white hover:cursor-pointer'
                     href={link.path}
