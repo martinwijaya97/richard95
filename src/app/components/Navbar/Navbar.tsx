@@ -24,8 +24,8 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className='fixed mx-auto border  border-[#33353F] top-0 left-0 right-0 z-10 bg-black bg-opacity-90'>
-      <div className='flex flex-wrap container items-center justify-between mx-auto p-8'>
+    <nav className='fixed mx-auto border  border-[#33353F] top-0 left-0 right-0 z-10 bg-indigo-900 z-50'>
+      <div className='flex flex-wrap container items-center justify-between mx-auto p-2'>
         <Link href={'/'} className='flex flex-row space-x-0'>
           <Image
             src='/images/icons-richard.png'

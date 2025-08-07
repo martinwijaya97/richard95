@@ -193,7 +193,7 @@ const TimelineCard3D: React.FC<TimelineCard3DProps> = ({
                   className='border-t border-white/20 pt-4 mt-4'
                 >
                   <h4 className='text-sm font-semibold text-white mb-3 opacity-80'>
-                    Key Features:
+                    Features:
                   </h4>
                   <ul className='space-y-2'>
                     {item.details.map((detail, i) => (
@@ -222,7 +222,7 @@ const TimelineCard3D: React.FC<TimelineCard3DProps> = ({
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              {isExpanded ? 'Show Less' : 'Learn More'}
+              {isExpanded ? 'Show Less' : 'Show More'}
               <motion.span
                 animate={{ rotate: isExpanded ? 180 : 0 }}
                 transition={{ duration: 0.3 }}
