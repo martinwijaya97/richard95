@@ -20,11 +20,12 @@ const Navbar: React.FC = () => {
     { title: 'Roadmap', path: '#roadmap' },
     { title: 'DEX', path: '#dex' },
     { title: 'Games', path: '/games' },
+    { title: 'Animations', path: '/animations' },
   ];
 
   return (
-    <nav className='fixed mx-auto border  border-[#33353F] top-0 left-0 right-0 z-10 bg-black bg-opacity-90'>
-      <div className='flex flex-wrap container items-center justify-between mx-auto p-8'>
+    <nav className='fixed mx-auto border  border-[#33353F] top-0 left-0 right-0 z-10 bg-indigo-900 z-50'>
+      <div className='flex flex-wrap container items-center justify-between mx-auto p-2'>
         <Link href={'/'} className='flex flex-row space-x-0'>
           <Image
             src='/images/icons-richard.png'
@@ -57,7 +58,7 @@ const Navbar: React.FC = () => {
           <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8'>
             {navLinks.map((link, index) => (
               <li key={index}>
-                {link.path === '/games' ? (
+                {link.path === '/games' || link.path === '/animations' ? (
                   <Link
                     className='block py-2 px-4 text-white hover:cursor-pointer'
                     href={link.path}

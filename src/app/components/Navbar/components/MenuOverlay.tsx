@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import NavLink from './NavLink';
 
 interface LinkItem {
@@ -15,7 +16,16 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ links }) => {
     <ul className='flex flex-col py-4 items-center'>
       {links.map((link, index) => (
         <li key={index}>
-          <NavLink href={link.path} title={link.title} />
+          {link.path === '/games' || link.path === '/animations' ? (
+            <Link
+              className='block py-2 px-4 text-white hover:cursor-pointer'
+              href={link.path}
+            >
+              {link.title}
+            </Link>
+          ) : (
+            <NavLink href={link.path} title={link.title} />
+          )}
         </li>
       ))}
     </ul>

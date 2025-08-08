@@ -1,16 +1,16 @@
-'use client'
+'use client';
 
-import React, { useEffect, useRef } from 'react'
-import Phaser from 'phaser'
+import React, { useEffect, useRef } from 'react';
+import Phaser from 'phaser';
 
 type GameCanvasProps = {
-  width?: number
-  height?: number
-  backgroundColor?: string
-  create?: (scene: Phaser.Scene) => void
-  preload?: (scene: Phaser.Scene) => void
-  physicsConfig?: Phaser.Types.Core.PhysicsConfig
-}
+  width?: any;
+  height?: any;
+  backgroundColor?: string;
+  create?: (scene: Phaser.Scene) => void;
+  preload?: (scene: Phaser.Scene) => void;
+  physicsConfig?: Phaser.Types.Core.PhysicsConfig;
+};
 
 const GameCanvas: React.FC<GameCanvasProps> = ({
   width = 800,
@@ -25,23 +25,23 @@ const GameCanvas: React.FC<GameCanvasProps> = ({
     },
   },
 }) => {
-  const gameRef = useRef<Phaser.Game | null>(null)
-  const containerRef = useRef<HTMLDivElement>(null)
+  const gameRef = useRef<Phaser.Game | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (typeof window === 'undefined' || !containerRef.current) return
+    if (typeof window === 'undefined' || !containerRef.current) return;
 
     class MyScene extends Phaser.Scene {
       constructor() {
-        super('MainScene')
+        super('MainScene');
       }
 
       preload() {
-        preload?.(this)
+        preload?.(this);
       }
 
       create() {
-        create?.(this)
+        create?.(this);
       }
     }
 
@@ -53,19 +53,19 @@ const GameCanvas: React.FC<GameCanvasProps> = ({
       parent: containerRef.current,
       scene: [MyScene],
       physics: physicsConfig,
-    }
+    };
 
     if (!gameRef.current) {
-      gameRef.current = new Phaser.Game(config)
+      gameRef.current = new Phaser.Game(config);
     }
 
     return () => {
-      gameRef.current?.destroy(true)
-      gameRef.current = null
-    }
-  }, [width, height, backgroundColor, create, preload, physicsConfig])
+      gameRef.current?.destroy(true);
+      gameRef.current = null;
+    };
+  }, [width, height, backgroundColor, create, preload, physicsConfig]);
 
-  return <div ref={containerRef} />
-}
+  return <div ref={containerRef} />;
+};
 
-export default GameCanvas
+export default GameCanvas;

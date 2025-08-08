@@ -9,7 +9,7 @@ import { Link as ScrollLink } from 'react-scroll';
 // Fungsi untuk merender title
 const renderTitle = () => (
   <h1 className='text-white mb-4 text-4xl lg:text-8xl lg:leading-normal font-extrabold'>
-    <div className='text-transparent bg-clip-text bg-gradient-primary'>
+    <div className='flex bg-clip-text'>
       Hello, I&apos;m
     </div>
     <TypeAnimation
@@ -73,7 +73,10 @@ const renderButtons = () => <div>{renderButtonBuyToken()}</div>;
 // Fungsi utama komponen HeroSection
 const HeroSection: React.FC = () => {
   return (
-    <section id='#home' className='lg:py-6 mt-28 relative mx-auto px-12 h-full'>
+    <section
+      id='#home'
+      className='lg:py-6 mt-28 relative mx-auto px-12 h-full bg-black'
+    >
       <div className='grid grid-cols-1 sm:grid-cols-12 mb-36 '>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -100,7 +103,7 @@ const HeroSection: React.FC = () => {
         loop
         autoPlay
         muted
-        className='w-screen absolute left-0 top-0 h-full  object-cover flex   z-[1] max-[900px]:h-[210%] max-[500px]:h-[110%] opacity-[0.5]'
+        className='w-screen absolute left-0 top-0 h-full  object-cover flex   z-[1] max-[900px]:h-[210%] max-[500px]:h-[110%] opacity-[0.5] '
       >
         <source src='/videos/background.mp4' type='video/mp4' />
       </video>
