@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
     { title: 'Roadmap', path: '#roadmap' },
     { title: 'DEX', path: '#dex' },
     { title: 'Games', path: '/games' },
-    { title: 'Animations', path: '/animations' },
+    // { title: 'Animations', path: '/animations' },
   ];
 
   return (

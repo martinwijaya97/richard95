@@ -1,8 +1,17 @@
 'use client';
-import Phaser from 'phaser';
+
 import GameCanvas from '@/app/game_engine/GameCanvas';
+import { useEffect, useState } from 'react';
 
 const ListGames = () => {
+  const [PhaserLib, setPhaserLib] = useState(null);
+
+  useEffect(() => {
+    const Phaser = require('phaser');
+    setPhaserLib(Phaser);
+  }, []);
+
+  if (!PhaserLib) return null; // Tunggu Phaser load di client
   const preload = (scene: Phaser.Scene) => {
     scene.load.image('center-image', '/images/token.jpeg'); // path dari public
   };
