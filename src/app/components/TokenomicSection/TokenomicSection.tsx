@@ -71,7 +71,7 @@ const TokenomicSection: React.FC = () => {
     <section>
       <div className='pt-8 px-4 sm:pt-16 xl:px-16 flex flex-col items-center '>
         <h1 className='text-4xl lg:text-8xl font-bold text-transparent bg-clip-text bg-gradient-primary pb-12'>
-          Tokenomics
+          Tokenomicsssssssss
         </h1>
         <div className="w-full flex justify-center my-8">
           <div className="grid grid-cols-3 border border-gray-700 rounded-md bg-black text-white overflow-hidden shadow-md px-12 py-8 divide-x divide-gray-700 w-full max-w-10xl">
