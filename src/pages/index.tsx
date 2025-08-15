@@ -6,6 +6,7 @@ import Navbar from '@/app/components/Navbar';
 import Roadmap from '@/app/components/Roadmap';
 import TokenomicSection from '@/app/components/TokenomicSection';
 import DexScreenerSection from '@/app/components/DexScreenerSection';
+import ChatbotSection from '@/app/components/ChatbotSection';
 import { FloatingElements, Timeline3D } from '@/app/components/Timeline3D';
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
           title='Token Analytics'
           description='Real-time token analytics and trading data from DEX Screener'
         />
+        <ChatbotSection />
         {/* <ProjectSection />
         <EmailSection /> */}
       </div>
