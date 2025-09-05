@@ -11,13 +11,15 @@ import { FloatingElements, Timeline3D } from '@/app/components/Timeline3D';
 
 const Home = () => {
   return (
-    <main className='flex min-h-screen flex-col bg-purple-900'>
+    <main className='flex min-h-screen flex-col bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900'>
+      {/* <FloatingElements /> */}
       <Navbar />
       <div>
         <HeroSection />
         <TokenomicSection />
         <AboutSection />
-        <Roadmap />
+        {/* <Roadmap /> */}
+        <Timeline3D />
         <DexScreenerSection
           contractAddress='0xf374ed71e8922077cf8300d4a1fedadaace11093'
           blockchain='abstract'
