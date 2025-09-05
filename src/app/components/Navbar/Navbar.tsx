@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     { title: 'About', path: '#about' },
     { title: 'Roadmap', path: '#roadmap' },
     { title: 'DEX', path: '#dex' },
-    { title: 'Games', path: '/games' },
+    // { title: 'Games', path: '/games' },
     // { title: 'Animations', path: '/animations' },
   ];
 

@@ -136,7 +136,7 @@ const Roadmap: React.FC = () => {
               title: 'Project Inception and Token Creation',
               text: [
                 'Finalize project vision and branding: “By office workers, for office workers.”',
-                'Launch of $RICHARD token on the Abstract blockchain.',
+                'Launch of $PENGUHONORER token on the Abstract blockchain.',
               ],
             })}
           </ScrollReveal>

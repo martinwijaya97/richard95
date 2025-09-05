@@ -14,7 +14,7 @@ const ChatbotSection = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: "Hello! I'm Mr. Richard, Indonesian contract teacher earning $53/month. Ask me anything! (max 50 chars) 😊",
+      text: "Hello! I'm Mr. Pengu Honorer, contract teacher earning $53/month. Ask me anything! (max 50 chars) 😊",
       isUser: false,
       timestamp: new Date(),
     },
@@ -91,10 +91,10 @@ const ChatbotSection = () => {
       <div className='max-w-4xl mx-auto'>
         <div className='text-center mb-8'>
           <h2 className='text-4xl font-bold text-white mb-4'>
-            💚 Chat with Mr. Richard
+            Chat with Mr. PENGU HONORER
           </h2>
           <p className='text-lg text-gray-300'>
-            Indonesian Contract Teacher ready to listen and share experiences
+            Contract Teacher ready to listen and share experiences
           </p>
           <p className='text-sm text-yellow-400 mt-2'>
             &quot;Teaching with heart, despite earning only $53/month&quot;
@@ -179,7 +179,7 @@ const ChatbotSection = () => {
                   type='text'
                   value={inputValue}
                   onChange={handleInputChange}
-                  placeholder='Share your story or ask Mr. Richard... (max 50 characters)'
+                  placeholder='Share your story or ask Mr. Pengu Honorer... (max 50 characters)'
                   className='w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent'
                   disabled={isLoading}
                 />

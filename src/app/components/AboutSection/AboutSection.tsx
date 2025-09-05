@@ -58,10 +58,10 @@ const AboutSection: React.FC = () => {
         <div>{renderImage()}</div>
         <div>
           <h2 className='text-4xl font-bold text-white mb-4 mt-4 lg:mt-0'>
-            Richard the penguin
+            Pengu Honorer
           </h2>
           <p className='text-white text-base lg:text-lg'>
-            Richard the Penguins Community is a place where you can entertain yourself with mini-games to pass the time, and share stories and office-life struggles with others on Telegram.
+            Welcome to a community where people and AI team up. Ask questions and get instant, high-quality answers; share prompts and tools. Holders/supporters get priority access, advanced features, and governance on what we build next. Learn, ship, and have fun side by side with AI.
             <br></br>
             Lets Connect to our community!
           </p>

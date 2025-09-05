@@ -17,7 +17,7 @@ const Timeline3D: React.FC = () => {
       details: [
         'Initial concept development',
         'Team formation and planning',
-        'Launch of $RICHARD token on the Abstract blockchain',
+        'Launch of $PENGUHONORER token on the Abstract blockchain',
       ],
       color: 'from-blue-500 to-cyan-500',
       icon: '🚀',
@@ -40,11 +40,11 @@ const Timeline3D: React.FC = () => {
       year: '2025 Q4',
       title: 'Design & Development Phase',
       description:
-        'Developing mini games and user experience designs.',
+        'Developing AI and user experience designs.',
       details: [
-        'Design mini game concepts',
+        'Design AI chatbot with upload form concepts',
         'Prototype release for community feedback',
-        'Game testing by early $RICHARD holders',
+        'Game testing by early $PENGUHONORER holders',
       ],
       color: 'from-purple-500 to-pink-500',
       icon: '🎨',
@@ -55,8 +55,8 @@ const Timeline3D: React.FC = () => {
       title: 'Launch & Scale',
       description: 'Deploying to production and scaling for global reach.',
       details: [
-        'Launch official Mini Games with Smart Contract',
-        'Expand game collection and user engagement features',
+        'Launch official AI with Smart Contract to burn the token',
+        'Expand AI function and user engagement features',
       ],
       color: 'from-orange-500 to-red-500',
       icon: '🌍',
@@ -69,7 +69,7 @@ const Timeline3D: React.FC = () => {
         'Exploring new frontiers in web and experiences.',
       details: [
         'AR/VR capabilities',
-        'AI-powered animations',
+        'AI-powered for create animations using contract',
       ],
       color: 'from-violet-500 to-purple-500',
       icon: '🔮',
@@ -219,10 +219,10 @@ const Timeline3D: React.FC = () => {
                 >
                   <div className='text-4xl mb-4'>🎭</div>
                   <h4 className='text-xl font-bold text-white mb-2'>
-                    Gamify Blockchain Adoption
+                    Blockchain Adoption
                   </h4>
                   <p className='text-gray-300'>
-                    Make blockchain and crypto accessible and enjoyable through immersive gaming experiences powered by our token coin.
+                    Expert AI teacher in every question and verified answers become a community-owned public good.
                   </p>
                 </motion.div>
 
@@ -238,7 +238,7 @@ const Timeline3D: React.FC = () => {
                 >
                   <div className='text-4xl mb-4'>⚡</div>
                   <h4 className='text-xl font-bold text-white mb-2'>
-                    Foster Community Ownership
+                    Community Ownership
                   </h4>
                   <p className='text-gray-300'>
                     Let the community decide the future of the ecosystem through decentralized governance and transparent decision-making.
@@ -260,7 +260,7 @@ const Timeline3D: React.FC = () => {
                     Bridge Fun and Finance
                   </h4>
                   <p className='text-gray-300'>
-                    Redefine DeFi by making it playful, accessible, and entertaining — all while maintaining strong tokenomics and value for holders.
+                    Redefine by making accessible, and entertaining — all while maintaining strong tokenomics and value for holders.
                   </p>
                 </motion.div>
               </div>

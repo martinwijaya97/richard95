@@ -14,9 +14,9 @@ const renderTitle = () => (
     </div>
     <TypeAnimation
       sequence={[
-        'Richard the Penguin',
+        'Pengu Honorer',
         1000,
-        '$RICHARD95',
+        '$PENGUHONORER',
         1000,
         'AI Token',
         1000,
@@ -30,12 +30,11 @@ const renderTitle = () => (
 const renderDescription = () => (
   <div className='mb-8'>
     <p className='text-white mb-4 text-lg lg:text-xl'>
-      We&apos;re here to brighten up office workers downtime with fun mini games
-      and even make you rich if you hold our token!
+      Ask anything. Get answers. Powered by AI, fueled by $PENGUHONORER.
     </p>
 
     <ul className='list-disc pl-6 text-white text-lg lg:text-xl'>
-      <li>Buy $RICHARD95</li>
+      <li>Buy $PENGUHONORER</li>
       <li>HODL</li>
       <li>To the Moon !!!</li>
     </ul>

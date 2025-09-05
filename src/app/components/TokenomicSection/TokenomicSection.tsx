@@ -50,8 +50,8 @@ const TokenomicItem: React.FC<TokenomicItemProps> = ({
 const TokenomicSection: React.FC = () => {
   const achievementList = [
     {
-      text: 'Token Supply',
-      value: 63000000000000,
+      text: 'Token',
+      value: "$PENGUHONORER",
       postfix: '',
     },
     {
