@@ -14,7 +14,7 @@ const ChatbotSection = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: 'Halo! Saya adalah AI assistant. Silakan tanyakan apa saja (max 50 karakter).',
+      text: "Hello! I'm Mr. Richard, Indonesian contract teacher earning $53/month. Ask me anything! (max 50 chars) 😊",
       isUser: false,
       timestamp: new Date(),
     },
@@ -87,18 +87,21 @@ const ChatbotSection = () => {
   };
 
   return (
-    <section className='py-16 px-4 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'>
+    <section className='py-16 px-4'>
       <div className='max-w-4xl mx-auto'>
         <div className='text-center mb-8'>
           <h2 className='text-4xl font-bold text-white mb-4'>
-            AI Chat Assistant
+            💚 Chat with Mr. Richard
           </h2>
           <p className='text-lg text-gray-300'>
-            Tanyakan apa saja kepada AI assistant kami
+            Indonesian Contract Teacher ready to listen and share experiences
+          </p>
+          <p className='text-sm text-yellow-400 mt-2'>
+            &quot;Teaching with heart, despite earning only $53/month&quot;
           </p>
         </div>
 
-        <div className='bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-purple-500/20 shadow-2xl'>
+        <div className='bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-green-500/30 shadow-2xl'>
           {/* Chat Messages */}
           <div className='h-96 overflow-y-auto p-6 space-y-4'>
             {messages.map((message) => (
@@ -115,7 +118,7 @@ const ChatbotSection = () => {
                 >
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                      message.isUser ? 'bg-purple-600' : 'bg-blue-600'
+                      message.isUser ? 'bg-teal-600' : 'bg-green-700'
                     }`}
                   >
                     {message.isUser ? (
@@ -127,8 +130,8 @@ const ChatbotSection = () => {
                   <div
                     className={`px-4 py-2 rounded-2xl ${
                       message.isUser
-                        ? 'bg-purple-600 text-white'
-                        : 'bg-gray-700 text-white'
+                        ? 'bg-teal-600 text-white'
+                        : 'bg-green-800 text-white'
                     }`}
                   >
                     <p className='text-sm'>{message.text}</p>
@@ -146,7 +149,7 @@ const ChatbotSection = () => {
             {isLoading && (
               <div className='flex justify-start'>
                 <div className='flex items-start space-x-3'>
-                  <div className='w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center'>
+                  <div className='w-8 h-8 rounded-full bg-green-700 flex items-center justify-center'>
                     <Bot className='w-4 h-4 text-white' />
                   </div>
                   <div className='bg-gray-700 px-4 py-2 rounded-2xl'>
@@ -176,7 +179,7 @@ const ChatbotSection = () => {
                   type='text'
                   value={inputValue}
                   onChange={handleInputChange}
-                  placeholder='Ketik pertanyaan Anda... (max 50 karakter)'
+                  placeholder='Share your story or ask Mr. Richard... (max 50 characters)'
                   className='w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent'
                   disabled={isLoading}
                 />
@@ -195,10 +198,10 @@ const ChatbotSection = () => {
                 disabled={
                   !inputValue.trim() || inputValue.length > 50 || isLoading
                 }
-                className='px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl hover:from-purple-700 hover:to-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 flex items-center space-x-2'
+                className='px-6 py-3 bg-gradient-to-r from-green-600 to-teal-600 text-white rounded-xl hover:from-green-700 hover:to-teal-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 flex items-center space-x-2'
               >
                 <Send className='w-4 h-4' />
-                <span>Kirim</span>
+                <span>Send</span>
               </button>
             </form>
           </div>
